@@ -1,12 +1,10 @@
-// app/api/inngest/route.ts
-
 import { serve } from "inngest/next";
 import {
   inngest,
   syncUserCreation,
   syncUserUpdation,
   syncUserDeletion,
-} from "./inngest"; // 👈 this should match the file where your inngest functions are defined
+} from "./inngest"; // Must match the file name exactly
 
 export const { GET, POST } = serve({
   client: inngest,
